@@ -1,0 +1,33 @@
+TestNG-  Unit Test Framework
+Java Unit Test Framework
+purpose-design testcases in a systemetic way
+-html reports
+-diff annotations
+-priorities/sequences
+-dependencies
+-grouping
+-data provider
+
+TDD- Test Driven Development
+
+
+sequence
+------------------------
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+
+@BeforeMethod
+@Test
+@AfterMethod
+
+@BeforeMethod
+@Test
+@AfterMethod
+
+@AfterClass
+@AfterTest
+@AfterSuite
+
+------------------------------------------
+testng runs through sequence of method names

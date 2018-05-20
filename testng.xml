@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryFailed Test Suite">
+	
+	<listeners>
+	<listener class-name="RetryLogic.MyTransformer"/>
+	</listeners>
+	
+	<test name="RetryMultipleFailedTestCases">
+		<classes>
+			<class name="RetryLogic.RetryTestUsingIAnnotationTransformer"/>
+		</classes>
+	</test>
+</suite>
+
+<!--1st
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.test.TestNGBasics"/>
+      <class name="com.test.ExceptionTimeOutAndException"/>
+      <class name="com.test.InvocationCount"/>
+      <class name="com.test.TestNGFeatures"/>
+      <class name="com.test.GoogleTitleTest"/>
+      <class name="com.test.GoogleTest"/>
+    </classes>
+  </test> 
+</suite> 
+
+-->
+<!--2nd
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+	<test name="Testing Parameterization">
+	<parameter name="url" value="https://login.yahoo.com/"/>
+	<parameter name="username" value="ram@yahoo.in"/>	
+		<classes>
+			<class name="ParameterTest.ParameterTesting"/>
+		</classes>
+	</test>
+</suite>
+-->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.test.GoogleTitleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="googleLogoTest"/>
+          <include name="googleTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.GoogleTitleTest -->
+      <class name="com.test.GoogleTest">
+        <methods>
+          <include name="AgooglelogoTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.GoogleTest -->
+      <class name="com.test.TestNGFeatures">
+        <methods>
+          <include name="RegPageTest"/>
+          <include name="loginTest"/>
+          <include name="SearchPageTest"/>
+          <include name="HomePageTest"/>
+        </methods>
+      </class> <!-- com.test.TestNGFeatures -->
+      <class name="com.test.ExceptionTimeOutAndException">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.test.ExceptionTimeOutAndException -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
